@@ -1,0 +1,33 @@
+# CodeRabbit AI Configuration for High-Rigor ML & Python Projects
+# Documentation: https://docs.coderabbit.ai/guides/configure-coderabbit
+
+version: 2
+language: "en-US"
+
+reviews:
+  profile: "assertive" # High standards for production ML readiness
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches:
+      - "main"
+      - "master"
+  tools:
+    ruff:
+      enabled: true
+    github-checks:
+      enabled: true
+    markdownlint:
+      enabled: true
+
+chat:
+  auto_reply: true
+
+knowledge_base:
+  learnings:
+    enabled: true
